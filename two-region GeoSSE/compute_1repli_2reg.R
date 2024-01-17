@@ -10,7 +10,7 @@ diffusion_dynamic <- function(N,numsim,timewin,maxtime){
   library(rjson)
   library(parallel)
   # Set working directory
-  setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/two-region GeoSSE/')
+  setwd('~/Diffusion_GeoSSE/two-region GeoSSE/')
   # Load pre-computed initial frequencies 
   load(file = "DATA/pia_init.RData") 
   load(file = "DATA/pib_init.RData")

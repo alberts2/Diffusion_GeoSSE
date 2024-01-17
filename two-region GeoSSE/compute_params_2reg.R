@@ -8,7 +8,7 @@
 
 compute_params_2region <- function(case,pia_sta,pib_sta,piab_sta){
   # Set working directory
-  setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/two-region GeoSSE/')
+  setwd('~/Diffusion_GeoSSE/two-region GeoSSE/')
   # Draw random initial rate frequencies from a uniform distribution [0,1]
   pia_init <- runif(1,0,1)
   pib_init <- runif(1,0,1)

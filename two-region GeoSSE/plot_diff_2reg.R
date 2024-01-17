@@ -7,7 +7,7 @@ plot_diffu_2reg <- function(totalsim,timewin,maxT){
   # load the plot package
   library(ggplot2)
   # Set working directory
-  setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/two-region GeoSSE/')
+  setwd('~/Diffusion_GeoSSE/two-region GeoSSE/')
   #
   num_sim <- totalsim
   time_win <- timewin

@@ -3,7 +3,7 @@
 
 wrapper_replicates_2reg <- function(numsim){
   # Set working directory
-  setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/two-region GeoSSE')
+  setwd('~/Diffusion_GeoSSE/two-region GeoSSE')
   # Load saved outputs
   load(file = "DATA/N_combined_list_0.RData")
   load(file = "DATA/N_t_total_list_0.RData")

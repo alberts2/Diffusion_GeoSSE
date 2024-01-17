@@ -6,7 +6,7 @@ library(rjson)
 library(ggplot2)
 
 # Set working directory
-setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/three-region GeoSSE/wrbet/')
+setwd('~/Diffusion_GeoSSE/three-region GeoSSE/wrbet/')
 
 #LOAD FILES 
 load(file = "saved workspace/N_combined_list.RData")

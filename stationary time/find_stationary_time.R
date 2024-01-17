@@ -15,7 +15,7 @@
 
 find_stationary_time <- function(wa,wb,ea,eb,dab,dba,bab,pia_init,pib_init,maxtime,timewin,tol){
   # Set working directory
-  setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/stationary time/DATA/')
+  setwd('~/Diffusion_GeoSSE/stationary time/DATA/')
   #
   num_A   <- (wa+2*bab+eb)*(eb+dba-wb)
   denom_A <- (ea+dab+2*bab+eb)*(eb+dba+2*bab+ea)-(wb+2*bab+ea)*(wa+2*bab+eb)

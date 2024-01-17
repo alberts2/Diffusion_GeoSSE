@@ -1,7 +1,7 @@
 # This code combines all the simulation replicates generated using wr_di_v2.R and wr_di_v2.sh
 
 # Set working directory
-setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/three-region GeoSSE/wrdi/')
+setwd('~/Diffusion_GeoSSE/three-region GeoSSE/wrdi/')
 
 #Load the N_combined_list files
 load(file = "saved workspace_server/N_combined_list_0.RData")

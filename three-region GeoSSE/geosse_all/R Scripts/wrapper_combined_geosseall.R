@@ -1,7 +1,7 @@
 # This code combines all the simulation replicates generated using geosse_all.R and geosse_all.sh
 
 # Set working directory
-setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/three-region GeoSSE/geosse_all/')
+setwd('~/Diffusion_GeoSSE/three-region GeoSSE/geosse_all/')
 
 #Load the N_combined_list files
 

@@ -1,7 +1,7 @@
 # This code combines all the simulation replicates generated using wr_ext.R and wr_ext.sh
 
 # Set working directory
-setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/three-region GeoSSE/wrext/')
+setwd('~/Diffusion_GeoSSE/three-region GeoSSE/wrext/')
 
 #Load the N_combined_list files
 

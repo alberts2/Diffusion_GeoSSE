@@ -6,7 +6,7 @@ library(rjson)
 library(parallel)
 
 # Set working directory
-setwd('~/Documents/Code Testing/SSA/New tests/FOR UPLOAD/three-region GeoSSE/wrext/')
+setwd('~/Diffusion_GeoSSE/three-region GeoSSE/wrext/')
 
 # Define the range state space for a three-region GeoSSE model
 S <- list()
