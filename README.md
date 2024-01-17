@@ -1,4 +1,4 @@
-#### Code for analyses used on **A Diffusion-Based Approach for Simulating Forward-in-Time State-Dependent Speciation and Extinction Dynamics**
+#### Code for analyses used on *A Diffusion-Based Approach for Simulating Forward-in-Time State-Dependent Speciation and Extinction Dynamics* paper.
 
 ## Overview 
 
