@@ -1,15 +1,15 @@
-All reject the null hypothesis
+#### Code for analyses used on **A Diffusion-Based Approach for Simulating Forward-in-Time State-Dependent Speciation and Extinction Dynamics**
 
+## Overview 
 
-UPDATE: Sep 5
-this version is reference for other test as I have made the following changes
+# **stationary time** folder 
 
--. Avoid the case where Pi_(t) < 0 due to random draw from normal rv. Change made on wr_bet.R
+This folder consists of code used to compute time to stationary state frequencies in a two-region GeoSSE model (Section 2.8 of the manuscript). 
 
--. Normalize Pi_(t) so its sum across range states = 1, can be not equal to 1 due to computation error. Change made on wr_bet.R
+- **find_stationary_time.R**: R code to compute the time to stationary give the model's rate parameters. 
+- **DATA**: A compilation of sets of model parameters used on the manuscript.
+   - **Dataset_1**: model parameters used for Figure 7 (left panel).
+   - **Dataset_2**: model parameters used for Figure 7 (right panel). 
+   - **Dataset_3**: model parameters used for Figure 8 (left panel). 
+   - **Dataset_4**: model parameters used for Figure 8 (right panel)
 
--. Change made on wrapper_combined_wrbet. Now we save pA_theor_list from wr_bet.R as pA_theor_list_norm so need to change the name accordingly in this wrapper code
-
--. Change made on do_comparison_wrbet.R so now it can plot stacked bar plot over time instead of separate plot
-
-Already did run this code (Sep 6)
