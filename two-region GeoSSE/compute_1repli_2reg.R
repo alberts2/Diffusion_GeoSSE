@@ -191,7 +191,7 @@ diffusion_dynamic <- function(N,numsim,timewin,maxtime){
           next
         }
       }
-      ans = 2*sum_ans*delta_t
+      ans = sum_ans*delta_t
       return(ans)
     }
   }
@@ -247,7 +247,7 @@ diffusion_dynamic <- function(N,numsim,timewin,maxtime){
         sum_ans = sum_ans + N_sim_t[[sim]][[timestep]]$N_range[id]*b_list$b_rates[id_which]
       }
     }
-    ans <- sum_ans*delta_t
+    ans <- 1/2*sum_ans*delta_t
     return(ans)
   }
   ###
@@ -577,10 +577,5 @@ diffusion_dynamic <- function(N,numsim,timewin,maxtime){
   save(pAB_theor_list_norm,file = "DATA/pAB_theor_list_REPLACE.RData")
 }
 
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 100,maxtime = 60)
-diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 120)
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 150)
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 180)
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 250)
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 60)
-# diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 350)
+diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 250)
+diffusion_dynamic(N=2100,numsim = 10,timewin = 1000,maxtime = 60)
