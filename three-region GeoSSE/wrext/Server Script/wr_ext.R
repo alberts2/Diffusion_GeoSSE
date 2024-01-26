@@ -236,7 +236,7 @@ B_i_plus_func <- function(i,sim,timestep,N_sim_t,delta_t){ #temporary
         next
       }
     }
-    ans = 2*sum_ans*delta_t
+    ans = sum_ans*delta_t
     return(ans)
   }
 }
@@ -333,7 +333,7 @@ B_i_minus_func <- function(i,sim,timestep,N_sim_t,delta_t){
       sum_ans = sum_ans + N_sim_t[[sim]][[timestep]]$N_range[id]*b_list$b_rates[id_which]
     }
   }
-  ans <- sum_ans*delta_t
+  ans <- 1/2*sum_ans*delta_t
   return(ans)
 }
 ###

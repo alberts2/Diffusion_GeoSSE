@@ -48,12 +48,12 @@ w_C <- 0.03 # Within-region speciation rate in region C
 w_vec <- c(w_A,w_B,w_C)
 
 # Between-region speciation rates
-b_A_B <- 0.04   # Between-region speciation rate from range {A,B} to {A} and {B}
-b_A_C <- 0.05   # Between-region speciation rate from range {A,C} to {A} and {C}
-b_B_C <- 0.03   # Between-region speciation rate from range {B,C} to {B} and {C}
-b_A_BC <- 0.02  # Between-region speciation rate from range {A,B,C} to {A} and {B,C}
-b_B_AC <- 0.06  # Between-region speciation rate from range {A,B,C} to {B} and {A,C}
-b_C_AB <- 0.03  # Between-region speciation rate from range {A,B,C} to {C} and {A,B}
+b_A_B <- 0.08   # Between-region speciation rate from range {A,B} to {A} and {B}
+b_A_C <- 0.10   # Between-region speciation rate from range {A,C} to {A} and {C}
+b_B_C <- 0.06   # Between-region speciation rate from range {B,C} to {B} and {C}
+b_A_BC <- 0.04  # Between-region speciation rate from range {A,B,C} to {A} and {B,C}
+b_B_AC <- 0.12  # Between-region speciation rate from range {A,B,C} to {B} and {A,C}
+b_C_AB <- 0.06  # Between-region speciation rate from range {A,B,C} to {C} and {A,B}
 
 # 1 := {A}, 2 := {B}, 3 := {C}, 4 := {A,B}, 5 := {A,C}, 6 := {B,C}, 7 := {A,B,C}
 b_list <- data.frame(range_split1 = c(1,2,1,3,1,6,2,3,2,5,3,4),range_split2 = c(2,1,3,1,6,1,3,2,5,2,4,3),b_rates=c(rep(b_A_B,2),rep(b_A_C,2),rep(b_A_BC,2),rep(b_B_C,2),rep(b_B_AC,2),rep(b_C_AB,2)))
@@ -235,7 +235,7 @@ B_i_plus_func <- function(i,sim,timestep,N_sim_t,delta_t){ #temporary
         next
       }
     }
-    ans = 2*sum_ans*delta_t
+    ans = sum_ans*delta_t
     return(ans)
   }
 }
@@ -332,7 +332,7 @@ B_i_minus_func <- function(i,sim,timestep,N_sim_t,delta_t){
       sum_ans = sum_ans + N_sim_t[[sim]][[timestep]]$N_range[id]*b_list$b_rates[id_which]
     }
   }
-  ans <- sum_ans*delta_t
+  ans <- 1/2*sum_ans*delta_t
   return(ans)
 }
 ###
