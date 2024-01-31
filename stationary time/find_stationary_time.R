@@ -17,25 +17,25 @@ find_stationary_time <- function(wa,wb,ea,eb,dab,dba,bab,pia_init,pib_init,maxti
   # Set working directory
   setwd('~/Diffusion_GeoSSE/stationary time/DATA/')
   #
-  num_A   <- (wa+2*bab+eb)*(eb+dba-wb)
-  denom_A <- (ea+dab+2*bab+eb)*(eb+dba+2*bab+ea)-(wb+2*bab+ea)*(wa+2*bab+eb)
+  num_A   <- (wa+bab+eb)*(eb+dba-wb)
+  denom_A <- (ea+dab+bab+eb)*(eb+dba+bab+ea)-(wb+bab+ea)*(wa+bab+eb)
   #
   K_1 <- num_A/denom_A
-  K_2 <- 1-((ea+dab+2*bab+eb)/(wa+2*bab+eb))*(num_A/denom_A)
+  K_2 <- 1-((ea+dab+bab+eb)/(wa+bab+eb))*(num_A/denom_A)
   #
-  R <- sqrt(16*bab^2+8*(bab*ea+bab*eb+bab*wa+bab*wb)+4*(ea*eb+ea*wa+eb*wb+wa*wb)-2*dab*dba+dab^2+dba^2)
+  R <- sqrt(4*bab^2+4*(bab*ea+bab*eb+bab*wa+bab*wb)+4*(ea*eb+ea*wa+eb*wb+wa*wb)-2*dab*dba+dab^2+dba^2)
   #
-  C_1 <- ((pia_init-K_1)*(2*bab+ea+wb))/R - ((pib_init-K_2)*(dab-dba-R))/(2*R)
-  C_2 <- ((K_1-pia_init)*(2*bab+ea+wb))/R +(pib_init-K_2)*(1+(dab-dba-R)/(2*R))
+  C_1 <- ((pia_init-K_1)*(bab+ea+wb))/R - ((pib_init-K_2)*(dab-dba-R))/(2*R)
+  C_2 <- ((K_1-pia_init)*(bab+ea+wb))/R +(pib_init-K_2)*(1+(dab-dba-R)/(2*R))
   #
-  v1_A <- -(1/(2*(2*bab+ea+wb)))*(-dab+dba-R)
-  v2_A <- -(1/(2*(2*bab+ea+wb)))*(-dab+dba+R)
+  v1_A <- -(1/(2*(bab+ea+wb)))*(-dab+dba-R)
+  v2_A <- -(1/(2*(bab+ea+wb)))*(-dab+dba+R)
   #
   v1_B <- 1
   v2_B <- 1 
   #
-  lambda_1 <- (1/2)*(-4*bab-dab-dba-2*ea-2*eb-R)
-  lambda_2 <- (1/2)*(-4*bab-dab-dba-2*ea-2*eb+R)
+  lambda_1 <- (1/2)*(-2*bab-dab-dba-2*ea-2*eb-R)
+  lambda_2 <- (1/2)*(-2*bab-dab-dba-2*ea-2*eb+R)
   # Theoretical state frequency for range state {A} over time
   pia_t <- function(t){
     C_1*v1_A*exp(lambda_1*t) + C_2*v2_A*exp(lambda_2*t) + K_1
