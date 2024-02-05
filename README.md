@@ -37,11 +37,11 @@ This folder is used for analyses involving a three-region GeoSSE model and it co
      - **wr_di_v2.sh**					: a shell script to generate multiple replicates from **wr_di_v2.R**.
      - **wrapper_combined_wrdi.R**		: a wrapper script to combine all the replicates from **wr_di_v2.sh**.
      - **do_comparison_wrdi.R**			: plot the output (Figure 4) and do the statistical tests (Example 2, Table 1). 
-- **wrext** folder					: consists of codes used for analyses using a GeoSSE model with only **within-region speciation and extinction events** included.
-     - **wr_ext.R**					: generate one simulation replicate of state dynamics under a 3-region GeoSSE model with only **within-region speciation and extinction events** included.
-     - **wr_ext.sh**					: a shell script to generate multiple replicates from **wr_ext.R**.
-      - **wrapper_combined_wrext.R**		: a wrapper script to combine all the replicates from **wr_ext.sh**.
-      - **do_comparison_wrext.R**		: plot the output (Figure 4) and do the statistical tests (Example 3, Table 1). 
+- **wrext** folder					      : consists of codes used for analyses using a GeoSSE model with only **within-region speciation and extinction events** included.
+     - **wr_ext.R**					      : generate one simulation replicate of state dynamics under a 3-region GeoSSE model with only **within-region speciation and extinction events** included.
+     - **wr_ext.sh**					      : a shell script to generate multiple replicates from **wr_ext.R**.
+     - **wrapper_combined_wrext.R**		: a wrapper script to combine all the replicates from **wr_ext.sh**.
+     - **do_comparison_wrext.R**		   : plot the output (Figure 4) and do the statistical tests (Example 3, Table 1). 
  - **geosse_all**	 folder			: consists of codes used for analyses using a GeoSSE model with **all the events** included.
      - **geosse_all.R**	 				: generate one simulation replicate of state dynamics under a full 3-region GeoSSE model. 
      - **geosse_all.sh**				: a shell script to generate multiple replicates from **geosse_all.R**.
