@@ -587,31 +587,31 @@ par(mar=c(5,6,4,1))
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[A]), xlab="time",main="(a)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NA_Diffusion)){
-  lines(time_span,NA_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NA_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NA_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state A
 
-lines(time_span,NA_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state A
+lines(time_span,NA_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state A
 
 ###Count plot range state B
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[B]), xlab="time",main="(b)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NB_Diffusion)){
-  lines(time_span,NB_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NB_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NB_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state B
 
-lines(time_span,NB_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state B
+lines(time_span,NB_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state B
 
 ###Count plot range state C
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[C]), xlab="time",main="(c)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NC_Diffusion)){
-  lines(time_span,NC_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NC_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NC_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state C
 
-lines(time_span,NC_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state C
+lines(time_span,NC_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state C
 
 ### Individual plots (widespread count)
 layout(matrix(c(1,1, 2,2, 3,3,4,4), ncol = 4, byrow = TRUE))
@@ -621,41 +621,41 @@ par(mar=c(5,6,4,1))
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[AB]), xlab="time",main="(d)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NAB_Diffusion)){
-  lines(time_span,NAB_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NAB_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NAB_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state AB
 
-lines(time_span,NAB_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state AB
+lines(time_span,NAB_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state AB
 
 ###Count plot range state AC
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[AC]), xlab="time",main="(e)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NAC_Diffusion)){
-  lines(time_span,NAC_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NAC_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NAC_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state AC
 
-lines(time_span,NAC_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state AC
+lines(time_span,NAC_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state AC
 
 ###Count plot range state BC
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[BC]), xlab="time",main="(f)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NBC_Diffusion)){
-  lines(time_span,NBC_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NBC_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NBC_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state BC
 
-lines(time_span,NBC_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state BC
+lines(time_span,NBC_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state BC
 
 ###Count plot range state ABC
 plot(NULL, xlim = c(0,max_T), ylim=c(0,100), ylab=expression(N[ABC]), xlab="time",main="(g)",cex.axis=2.0,cex.lab=2.0,cex.main=2.0)
 
 for (i in 1:length(NABC_Diffusion)){
-  lines(time_span,NABC_Diffusion[[i]],type="l",col="#EEE9E9")
+  lines(time_span,NABC_Diffusion[[i]],type="l",col=alpha("grey", 0.3))
 }
 lines(time_span,NABC_aver_MASTER,type="l",lwd=2.0) #The expected simulated count of species with range state ABC
 
-lines(time_span,NABC_aver_Diffusion,type="l",lwd=2.0,col='red') #The expected simulated count of species with range state ABC
+lines(time_span,NABC_aver_Diffusion,type="l",lwd=2.0,lty = 3,col='red') #The expected simulated count of species with range state ABC
 
 ##### testing expected means of count at the end time between MASTER and Diffusion are equal (Welch two sample t-test)
 #
