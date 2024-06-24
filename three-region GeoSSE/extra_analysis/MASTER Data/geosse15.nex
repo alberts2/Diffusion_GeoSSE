@@ -1,0 +1,5 @@
+#nexus
+
+Begin trees;
+tree TREE_0 = (((1[&type="S",location="0",time=10.0]:0.5670350978200887,2[&type="S",location="0",time=10.0]:0.5670350978200887)[&type="S",location="0",reaction="Within-region speciation",time=9.432964902179911]:7.592072466481141,(3[&type="L",location="1",time=10.0]:6.793759690902544)[&type="S",location="1",reaction="Extinction",time=3.2062403090974563]:1.365347873398686)[&type="S",location="3",reaction="Between-region speciation",time=1.8408924356987704]:0.5346693158349329)[&type="S",location="0",reaction="Dispersal",time=1.3062231198638374]:1.3062231198638374;
+End;

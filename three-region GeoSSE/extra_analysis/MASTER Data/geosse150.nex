@@ -1,0 +1,5 @@
+#nexus
+
+Begin trees;
+tree TREE_0 = (1[&type="S",location="3",time=10.0]:0.36835853853469125)[&type="S",location="1",reaction="Dispersal",time=9.631641461465309]:9.631641461465309;
+End;
